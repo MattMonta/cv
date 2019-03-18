@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Matthieu M.</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="card text-center">
+        <%= image_tag("test.png", :alt => "Matthieu Montagne", :id => "img_profile", :class =>"img-circle") %>
+        <h1>Matthieu Montagne</h1>
+        <h2>Fullstack Developper</h2>
+
+        <p>
+          After studying law and working in courts, I decided to learn coding @ Le Wagon. My goal: <strong>create the best tools for legal workers</strong>.
+        </p>
+
+        <a href="https://lewagon.com" class="btn-red">See for yourself</a>
+    </div>
+
+    <div class="card text-center">
+      <ul class="list-inline">
+        <li class="text-center">
+          <a href="https://www.facebook.com/">
+            <i class="fa fa-facebook"></i> Facebook
+          </a>
+        </li>
+        <li class="text-center">
+          <a href="https://www.linkedin.com/in/matthieu-montagne-85230489/">
+            <i class="fa fa-linkedin"></i> Linkedin
+          </a>
+        </li>
+        <li class="text-center">
+          <a href="https://twitter.com/">
+           <i class="fa fa-twitter"></i> Twitter
+          </a>
+        </li>
+        <li class="text-center">
+          <a href="https://github.com/MattMonta/">
+           <i class="fa fa-github"></i> Github
+          </a>
+        </li>
+        <li class="text-center">
+          <a href="https://medium.com/@matthieumontagne">
+            <i class="fa fa-medium"></i> Medium
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card text-center">
+      <h2>My Favorite movies</h2>
+        <table>
+         <tbody>
+          <tr>
+            <td>
+              <%= link_to "https://www.imdb.com/title/tt0022286/" do %>
+                <%= image_tag "The_Public_Enemy.jpg", class: "img-movie" %>
+              <% end %>
+            </td>
+            <td>
+              <a href="https://www.imdb.com/title/tt0022286/"target="_blank">
+              <h3>The Public Enemy</h3>
+              <p>A young hoodlum rises up through the ranks of the Chicago underworld, even as a gangster's accidental death threatens to spark a bloody mob war.</p>
+            </td>
+          </tr>
+           <tr>
+            <td>
+              <%= link_to "https://www.imdb.com/title/tt0113277/" do %>
+                <%= image_tag "Heat.jpg", class: "img-movie" %>
+              <% end %>
+            </td>
+            <td>
+              <a href="https://www.imdb.com/title/tt0113277/"target="_blank"><h3>Heat</h3>
+              <p>A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <%= link_to "https://www.imdb.com/title/tt1235166/" do %>
+                <%= image_tag "Un_Prophete.png", class: "img-movie" %>
+              <% end %>
+            </td>
+            <td>
+              <a href="https://www.imdb.com/title/tt1235166/"target="_blank">
+              <h3>Un Prophete</h3>
+              <p>A young Arab man is sent to a French prison.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card text-center">
+      <h2>About this page</h2>
+        <p>This page has been coded during the
+          <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a></p>
+      <ul class="list-inline">
+        <li>
+          <a href="#">
+            <i class="fa fa-heart"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-share"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </body>
+</html>
+
