@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/smoothness/jquery-ui-1.9.0.custom.css" rel="stylesheet">
   </head>
 
   <body>
@@ -14,27 +15,22 @@
         <%= image_tag("test2.png", :alt => "Héloïse Blaudin de Thé", :id => "img_profile", :class =>"img-circle") %>
         <h1>Héloïse Blaudin de Thé</h1>
         <h2>Rédactrice</h2>
-
         <p>
           Rien que des <strong>mots</strong>.
         </p>
-
-        <a href="https://lewagon.com" class="btn-red">See for yourself</a>
+        <a href="https://www.cjoint.com/doc/19_03/ICvpyIUhyVs_interview-CV.pdf" target="_blank" class="btn-red">Interview exclusive d'Héloïse</a>
     </div>
-
     <div class="card text-center">
-      <h2> My realisation so far </h2>
-      <a href="https://pensercc.herokuapp.com/users/sign_in" class="btn-red">Penser c'est chouette</a>
-
+      <h2> Experiences </h2>
+      <%= link_to "https://www.happybreak.com/" do %>
+                <%= image_tag "happy.png", class: "img-xp" %>
+              <% end %>
+              <%= link_to "https://www.nosvignes.fr" do %>
+                <%= image_tag "nv.png", class: "img-xp" %>
+              <% end %>
     </div>
-
     <div class="card text-center">
       <ul class="list-inline">
-        <li class="text-center">
-          <a href="https://www.facebook.com/heloise.dethe">
-            <i class="fa fa-facebook"></i> Facebook
-          </a>
-        </li>
         <li class="text-center">
           <a href="https://www.linkedin.com/in/héloïse-de-thé-73b943106/">
             <i class="fa fa-linkedin"></i> Linkedin
@@ -92,7 +88,7 @@
     </div>
     <div class="card text-center">
       <h2>About this page</h2>
-        <p>This page has been created in Paris with <span style="font-size:100%;color:red;">&hearts;</span></p>
+        <p>This page was created in Paris with <span style="font-size:100%;color:red;">&hearts;</span></p>
       <ul class="list-inline">
         <li>
           <a href="#">
