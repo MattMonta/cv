@@ -1,0 +1,2 @@
+class HeloiseController < ApplicationController
+end
